@@ -34,7 +34,7 @@ function Form() {
 function Gallery(){
     const title = "title";
     const tag = "tag";
-    const content = "aaaaaaaaaa. aaaaaaaaaaaaaa. aaaaaaaaaa. aaaaaaaa.";
+    const content = "aaaaaaaaaa. aaaaaaaaaaaaaa. aaaaaaaaaa. aaaaaaaa.aaaa.";
     const index = 5;
     for(let i= 0; i<index; i++){
         return (
