@@ -38,9 +38,7 @@ function Gallery(){
     const index = 5;
     for(let i= 0; i<index; i++){
         return (
-            <div>
         <Posts title={title} tag={tag} content={content}/>
-        </div>
         );
     }
 }
