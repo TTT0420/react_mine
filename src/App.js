@@ -32,9 +32,9 @@ function Form() {
     );
 }
 function Gallery(){
-    const title = "title";
+    const title = "ゴルフコンペ募集中！！";
     const tag = "tag";
-    const content = "aaaaaaaaaa. aaaaaaaaaaaaaa. aaaaaaaaaa. aaaaaaaa.aaaa.";
+    const content = "5/1に青山高原ゴルフクラブにてゴルフコンペを開催します！現在参加人数は１０人であと５人募集中です！お気軽に参加してください！";
     const index = 5;
     for(let i= 0; i<index; i++){
         return (
