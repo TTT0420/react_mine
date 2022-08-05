@@ -1,3 +1,4 @@
+import Typography from '@mui/material/Typography';
 function Header() {
     return (
         <header className="hero is-dark is-bold">
@@ -11,7 +12,7 @@ function Header() {
 }
 
 function Form() {
-    function test(){
+    function test() {
 
     }
     return (
@@ -31,16 +32,20 @@ function Form() {
         </div>
     );
 }
-function Gallery(){
-    const title = "ゴルフコンペ募集中！！";
+function Gallery() {
+    const title = "タイトル";
     const tag = "tag";
-    const content = "5/1に青山高原ゴルフクラブにてゴルフコンペを開催します！現在参加人数は１０人であと５人募集中です！お気軽に参加してください！";
-    const index = 5;
-    for(let i= 0; i<index; i++){
-        return (
-        <Posts title={title} tag={tag} content={content}/>
-        );
+    const content = "本文です";
+    const index = 4;
+    const post = [];
+    for (let i = 0; i < index; i++) {
+        post.push(<Posts title={title} tag={tag} content={content} />);
     }
+    return (
+        <div key={index} className="columns">
+            {post}
+        </div>
+    );
 }
 
 function Posts(props) {
@@ -48,8 +53,8 @@ function Posts(props) {
     const tag = props.tag;
     const content = props.content;
     return (
-        <div className="columns is-vcenterd is-multiline">
-            <div className="column is-3">
+        <div>
+            <div className="column">
                 <div className="card">
                     <div className="card-image">
                         <figure className="image is-4by3">
@@ -74,7 +79,7 @@ function Posts(props) {
                         </div>
                     </div>
                 </div>
-            </div>           
+            </div>
         </div>
     );
 }
@@ -90,7 +95,7 @@ function Main() {
             </section>
             <section className="section">
                 <div className="container">
-                    <Gallery/>
+                    <Gallery />
                 </div>
             </section>
         </main>
